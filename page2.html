@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employment Registration - Interview Questions</title>
+    <title>Employment Registration - Step 2</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header class="main-header">
-        <h1>Employment Registration Form</h1>
+        <h1>Employment Registration Form - Step 2</h1>
     </header>
 
-    <!-- Main Form Container -->
+    <!-- Main Content -->
     <div class="form-container">
-        <form action="page3.html" method="post">
+        <form action="page3.html" method="POST">
             <h2>Interview Questions</h2>
+            
             <label for="aboutYourself">Tell Us About Yourself*</label>
             <textarea id="aboutYourself" name="aboutYourself" required></textarea>
 
@@ -25,7 +26,7 @@
             <label for="whyHireYou">One Reason Why You Should Be Hired*</label>
             <textarea id="whyHireYou" name="whyHireYou" required></textarea>
 
-            <label for="strengths">What Are Your Greatest Professional Strengths*</label>
+            <label for="strengths">What Are Your Greatest Professional Strengths?*</label>
             <textarea id="strengths" name="strengths" required></textarea>
 
             <label for="weakness">Your Weakness*</label>
@@ -50,37 +51,37 @@
                 <label for="devoteTimeNo">No</label>
             </div>
 
-            <label for="challenges">Could You Tell Us About a Challenge or Conflict You’ve Faced at Work and How You Dealt with It?*</label>
-            <textarea id="challenges" name="challenges" required></textarea>
+            <label for="conflictResolution">Could You Tell Us About a Challenge or Conflict You’ve Faced at Work and How You Dealt with It?*</label>
+            <textarea id="conflictResolution" name="conflictResolution" required></textarea>
 
-            <label for="fiveYears">Where Do You See Yourself in 5 Years?*</label>
-            <textarea id="fiveYears" name="fiveYears" required></textarea>
+            <label for="futureGoals">Where Do You See Yourself in 5 Years?*</label>
+            <textarea id="futureGoals" name="futureGoals" required></textarea>
 
-            <label for="characterWords">List Four Words That Describe Your Character*</label>
-            <textarea id="characterWords" name="characterWords" required></textarea>
+            <label for="characterWords">List Four (4) Words That Describe Your Character*</label>
+            <input type="text" id="characterWords" name="characterWords" required>
 
-            <label>What Means of Payment Do You Prefer?*</label>
+            <label for="paymentMethod">What Means of Payment Do You Prefer?*</label>
             <div class="radio-group">
-                <input type="radio" id="paymentDirectDeposit" name="payment" value="Direct deposit" required>
-                <label for="paymentDirectDeposit">Direct deposit</label>
-                <input type="radio" id="paymentCheck" name="payment" value="CHECK" required>
-                <label for="paymentCheck">CHECK</label>
+                <input type="radio" id="directDeposit" name="paymentMethod" value="Direct Deposit" required>
+                <label for="directDeposit">Direct Deposit</label>
+                <input type="radio" id="check" name="paymentMethod" value="Check" required>
+                <label for="check">Check</label>
             </div>
 
-            <label>Account Type*</label>
+            <label for="accountType">Account Type*</label>
             <div class="radio-group">
-                <input type="radio" id="accountChecking" name="accountType" value="Checking" required>
-                <label for="accountChecking">Checking</label>
-                <input type="radio" id="accountSavings" name="accountType" value="Savings" required>
-                <label for="accountSavings">Savings</label>
+                <input type="radio" id="checking" name="accountType" value="Checking" required>
+                <label for="checking">Checking</label>
+                <input type="radio" id="savings" name="accountType" value="Savings" required>
+                <label for="savings">Savings</label>
             </div>
 
-            <label>How Would You Like to Be Paid?*</label>
+            <label for="paymentFrequency">How Would You Like to Be Paid?*</label>
             <div class="radio-group">
-                <input type="radio" id="paidWeekly" name="paid" value="Weekly" required>
-                <label for="paidWeekly">Weekly</label>
-                <input type="radio" id="paidHourly" name="paid" value="Hourly" required>
-                <label for="paidHourly">Hourly</label>
+                <input type="radio" id="weekly" name="paymentFrequency" value="Weekly" required>
+                <label for="weekly">Weekly</label>
+                <input type="radio" id="hourly" name="paymentFrequency" value="Hourly" required>
+                <label for="hourly">Hourly</label>
             </div>
 
             <div class="form-navigation">
