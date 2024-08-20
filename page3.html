@@ -8,54 +8,70 @@
 </head>
 <body>
     <div class="form-container">
-        <h1>Additional Information</h1>
+        <div class="form-header">
+            <h1>Additional Information</h1>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+            </div>
+        </div>
         <form id="additionalInfoForm">
-            <label>Occupation*</label>
-            <div class="radio-group">
-                <input type="radio" id="unemployed" name="occupation" value="Unemployed" required>
-                <label for="unemployed">Unemployed</label>
+            <div class="form-group">
+                <label>Occupation*</label>
+                <div class="radio-group">
+                    <input type="radio" id="unemployed" name="occupation" value="Unemployed" required>
+                    <label for="unemployed">Unemployed</label>
 
-                <input type="radio" id="student" name="occupation" value="Student">
-                <label for="student">Student</label>
+                    <input type="radio" id="student" name="occupation" value="Student">
+                    <label for="student">Student</label>
 
-                <input type="radio" id="govt" name="occupation" value="Government worker">
-                <label for="govt">Government Worker</label>
+                    <input type="radio" id="govt" name="occupation" value="Government worker">
+                    <label for="govt">Government Worker</label>
 
-                <input type="radio" id="retired" name="occupation" value="Retired">
-                <label for="retired">Retired</label>
+                    <input type="radio" id="retired" name="occupation" value="Retired">
+                    <label for="retired">Retired</label>
 
-                <input type="radio" id="disabled" name="occupation" value="Disabled">
-                <label for="disabled">Disabled</label>
+                    <input type="radio" id="disabled" name="occupation" value="Disabled">
+                    <label for="disabled">Disabled</label>
+                </div>
             </div>
 
-            <label for="idUpload">Upload a Valid ID Front and Back*</label>
-            <input type="file" id="idUpload" name="idUpload" accept="image/*" multiple required>
-
-            <label for="prevExperience">Previous Occupation Experience*</label>
-            <div class="radio-group">
-                <input type="radio" id="experience1" name="prevExperience" value="1-5 Years" required>
-                <label for="experience1">1-5 Years</label>
-
-                <input type="radio" id="experience6" name="prevExperience" value="6-10 Years">
-                <label for="experience6">6-10 Years</label>
-
-                <input type="radio" id="experience10" name="prevExperience" value="10 Years and Above">
-                <label for="experience10">10 Years and Above</label>
-
-                <input type="radio" id="noneExperience" name="prevExperience" value="None">
-                <label for="noneExperience">None</label>
+            <div class="form-group">
+                <label for="idUpload">Upload a Valid ID Front and Back*</label>
+                <input type="file" id="idUpload" name="idUpload" multiple required>
             </div>
 
-            <label>Personal Records*</label>
-            <div class="radio-group">
-                <input type="radio" id="goodRecord" name="records" value="Good" required>
-                <label for="goodRecord">Good</label>
+            <div class="form-group">
+                <label>Previous Occupation Experience*</label>
+                <div class="radio-group">
+                    <input type="radio" id="exp1" name="prevExperience" value="1-5 Years" required>
+                    <label for="exp1">1-5 Years</label>
 
-                <input type="radio" id="badRecord" name="records" value="Bad">
-                <label for="badRecord">Bad</label>
+                    <input type="radio" id="exp2" name="prevExperience" value="6-10 Years">
+                    <label for="exp2">6-10 Years</label>
+
+                    <input type="radio" id="exp3" name="prevExperience" value="10 Years and Above">
+                    <label for="exp3">10 Years and Above</label>
+
+                    <input type="radio" id="expNone" name="prevExperience" value="None">
+                    <label for="expNone">None</label>
+                </div>
             </div>
 
-            <button type="button" id="submitForm">Submit</button>
+            <div class="form-group">
+                <label>Personal Records*</label>
+                <div class="radio-group">
+                    <input type="radio" id="recordGood" name="personalRecord" value="Good" required>
+                    <label for="recordGood">Good</label>
+
+                    <input type="radio" id="recordBad" name="personalRecord" value="Bad">
+                    <label for="recordBad">Bad</label>
+                </div>
+            </div>
+
+            <div class="form-navigation">
+                <button type="button" id="backToPage2" class="prev-btn">Previous</button>
+                <button type="button" id="submitForm" class="submit-btn">Submit</button>
+            </div>
         </form>
     </div>
     <script src="scripts.js"></script>
