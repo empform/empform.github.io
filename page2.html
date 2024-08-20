@@ -57,4 +57,43 @@
             <textarea id="fiveYears" name="fiveYears" required></textarea>
 
             <label for="characterWords">List Four Words That Describe Your Character*</label>
-            <t
+            <textarea id="characterWords" name="characterWords" required></textarea>
+
+            <label>What Means of Payment Do You Prefer?*</label>
+            <div class="radio-group">
+                <input type="radio" id="paymentDirectDeposit" name="payment" value="Direct deposit" required>
+                <label for="paymentDirectDeposit">Direct deposit</label>
+                <input type="radio" id="paymentCheck" name="payment" value="CHECK" required>
+                <label for="paymentCheck">CHECK</label>
+            </div>
+
+            <label>Account Type*</label>
+            <div class="radio-group">
+                <input type="radio" id="accountChecking" name="accountType" value="Checking" required>
+                <label for="accountChecking">Checking</label>
+                <input type="radio" id="accountSavings" name="accountType" value="Savings" required>
+                <label for="accountSavings">Savings</label>
+            </div>
+
+            <label>How Would You Like to Be Paid?*</label>
+            <div class="radio-group">
+                <input type="radio" id="paidWeekly" name="paid" value="Weekly" required>
+                <label for="paidWeekly">Weekly</label>
+                <input type="radio" id="paidHourly" name="paid" value="Hourly" required>
+                <label for="paidHourly">Hourly</label>
+            </div>
+
+            <div class="form-navigation">
+                <button type="button" onclick="history.back()" class="prev-btn">Previous</button>
+                <button type="submit" class="next-btn">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+    </footer>
+</body>
+</html>
