@@ -3,61 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employment Registration - Page 3</title>
+    <title>Employment Registration - Step 3</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Employment Registration</h1>
-        </header>
-        
-        <main>
-            <form id="registration-form">
-                <h2>Page 3</h2>
-                
-                <p>We assure you that any of your information won't be released to any personnel or agency for any reason. All information must be correct and accurate because it will be verified.</p>
-                
-                <label for="occupation">Occupation *</label>
-                <select id="occupation" name="occupation" required>
-                    <option value="" disabled selected>Select your occupation</option>
-                    <option value="unemployed">Unemployed</option>
-                    <option value="student">Student</option>
-                    <option value="government-workers">Government Workers</option>
-                    <option value="retired">Retired</option>
-                    <option value="disabled">Disabled</option>
-                </select>
-                
-                <label for="id-upload">Upload a Valid ID (Front and Back) *</label>
-                <input type="file" id="id-upload" name="id-upload" accept=".jpg,.jpeg,.png,.pdf" multiple required>
-                <p>Upload up to 10 supported files. Max 1 GB per file.</p>
-                
-                <label for="previous-experience">Previous Occupation Experience *</label>
-                <select id="previous-experience" name="previous-experience" required>
-                    <option value="" disabled selected>Select your experience</option>
-                    <option value="1-5-years">1-5 Years</option>
-                    <option value="6-10-years">6-10 Years</option>
-                    <option value="10-years-and-above">10 Years and Above</option>
-                    <option value="none">None</option>
-                </select>
-                
-                <label for="personal-records">Personal Records *</label>
-                <select id="personal-records" name="personal-records" required>
-                    <option value="" disabled selected>Select your personal record</option>
-                    <option value="good">Good</option>
-                    <option value="bad">Bad</option>
-                </select>
-                
-                <button type="button" class="btn" onclick="navigateToPage('page2.html')">Back</button>
-                <button type="button" class="btn" onclick="navigateToPage('thankyou.html')">Submit</button>
-            </form>
-        </main>
-        
-        <footer>
-            <p>&copy; 2024 Employment Registration</p>
-        </footer>
+    <!-- Header -->
+    <header class="main-header">
+        <h1>Employment Registration Form - Step 3</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="form-container">
+        <form action="thankyou.html" method="POST">
+            <h2>Additional Information</h2>
+            
+            <label for="occupation">Occupation*</label>
+            <div class="radio-group">
+                <input type="radio" id="unemployed" name="occupation" value="Unemployed" required>
+                <label for="unemployed">Unemployed</label>
+                <input type="radio" id="student" name="occupation" value="Student" required>
+                <label for="student">Student</label>
+                <input type="radio" id="govWorker" name="occupation" value="Government Worker" required>
+                <label for="govWorker">Government Worker</label>
+                <input type="radio" id="retired" name="occupation" value="Retired" required>
+                <label for="retired">Retired</label>
+                <input type="radio" id="disabled" name="occupation" value="Disabled" required>
+                <label for="disabled">Disabled</label>
+            </div>
+
+            <label for="idUpload">Upload a Valid ID Front and Back*</label>
+            <input type="file" id="idUpload" name="idUpload" multiple required>
+
+            <label for="previousOccupationExperience">Previous Occupation Experience*</label>
+            <div class="radio-group">
+                <input type="radio" id="experience1to5" name="previousOccupationExperience" value="1-5 Years" required>
+                <label for="experience1to5">1-5 Years</label>
+                <input type="radio" id="experience6to10" name="previousOccupationExperience" value="6-10 Years" required>
+                <label for="experience6to10">6-10 Years</label>
+                <input type="radio" id="experience11to15" name="previousOccupationExperience" value="11-15 Years" required>
+                <label for="experience11to15">11-15 Years</label>
+                <input type="radio" id="experience16plus" name="previousOccupationExperience" value="16+ Years" required>
+                <label for="experience16plus">16+ Years</label>
+            </div>
+
+            <label for="ownCar">Do You Own a Car?*</label>
+            <div class="radio-group">
+                <input type="radio" id="ownCarYes" name="ownCar" value="Yes" required>
+                <label for="ownCarYes">Yes</label>
+                <input type="radio" id="ownCarNo" name="ownCar" value="No" required>
+                <label for="ownCarNo">No</label>
+            </div>
+
+            <div class="form-navigation">
+                <button type="button" onclick="history.back()" class="prev-btn">Previous</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
     </div>
-    
-    <script src="scripts.js"></script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+    </footer>
 </body>
 </html>
