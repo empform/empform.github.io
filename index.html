@@ -3,89 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Page Form - Page 1</title>
+    <title>Employment Registration - Personal Information</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="main-header">
+        <h1>Employment Registration Form</h1>
+    </header>
+
+    <!-- Main Form Container -->
     <div class="form-container">
-        <div class="form-header">
-            <h1>Personal Information</h1>
-            <div class="progress-bar">
-                <div class="progress" style="width: 33%;"></div>
-            </div>
-        </div>
-        <form id="personalInfoForm">
-            <div class="form-group">
-                <label for="firstName">First Name*</label>
-                <input type="text" id="firstName" name="firstName" required>
-            </div>
+        <form action="page2.html" method="post">
+            <h2>Personal Information</h2>
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName" required>
 
-            <div class="form-group">
-                <label for="middleName">Middle Name*</label>
-                <input type="text" id="middleName" name="middleName" required>
-            </div>
+            <label for="middleName">Middle Name*</label>
+            <input type="text" id="middleName" name="middleName" required>
 
-            <div class="form-group">
-                <label for="lastName">Last Name*</label>
-                <input type="text" id="lastName" name="lastName" required>
-            </div>
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName" required>
 
-            <div class="form-group">
-                <label for="email">Email Address*</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+            <label for="email">E-Mail Address*</label>
+            <input type="email" id="email" name="email" required>
 
-            <div class="form-group">
-                <label for="phone">Phone Number*</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required>
 
-            <div class="form-group">
-                <label for="address1">Address Line 1*</label>
-                <input type="text" id="address1" name="address1" required>
-            </div>
+            <label for="address1">Address Line 1*</label>
+            <input type="text" id="address1" name="address1" required>
 
-            <div class="form-group">
-                <label for="address2">Address Line 2</label>
-                <input type="text" id="address2" name="address2">
-            </div>
+            <label for="address2">Address Line 2*</label>
+            <input type="text" id="address2" name="address2" required>
 
-            <div class="form-group">
-                <label for="city">City*</label>
-                <input type="text" id="city" name="city" required>
-            </div>
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required>
 
-            <div class="form-group">
-                <label for="state">State*</label>
-                <input type="text" id="state" name="state" required>
-            </div>
+            <label for="state">State*</label>
+            <input type="text" id="state" name="state" required>
 
-            <div class="form-group">
-                <label for="zip">Zip Code*</label>
-                <input type="text" id="zip" name="zip" required>
-            </div>
+            <label for="zip">Zip Code*</label>
+            <input type="text" id="zip" name="zip" required>
 
-            <div class="form-group">
-                <label for="ssn">Social Security Number*</label>
-                <input type="text" id="ssn" name="ssn" required>
-            </div>
+            <label for="ssn">Social Security Number*</label>
+            <input type="text" id="ssn" name="ssn" required>
 
-            <div class="form-group">
-                <label>US Citizen*</label>
-                <div class="radio-group">
-                    <input type="radio" id="citizenYes" name="citizen" value="Yes" required>
-                    <label for="citizenYes">Yes</label>
-
-                    <input type="radio" id="citizenNo" name="citizen" value="No">
-                    <label for="citizenNo">No</label>
-                </div>
+            <label>US Citizen*</label>
+            <div class="radio-group">
+                <input type="radio" id="usCitizenYes" name="usCitizen" value="Yes" required>
+                <label for="usCitizenYes">Yes</label>
+                <input type="radio" id="usCitizenNo" name="usCitizen" value="No" required>
+                <label for="usCitizenNo">No</label>
             </div>
 
             <div class="form-navigation">
-                <button type="button" id="nextToPage2" class="next-btn">Next</button>
+                <button type="submit" class="next-btn">Next</button>
             </div>
         </form>
     </div>
-    <script src="scripts.js"></script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+    </footer>
 </body>
 </html>
