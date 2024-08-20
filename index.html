@@ -3,67 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employment Registration - Page 1</title>
+    <title>Employment Registration - Step 1</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Employment Registration</h1>
-        </header>
-        
-        <main>
-            <form id="registration-form">
-                <h2>Page 1</h2>
-                
-                <label for="first-name">First Name *</label>
-                <input type="text" id="first-name" name="first-name" required>
-                
-                <label for="middle-name">Middle Name *</label>
-                <input type="text" id="middle-name" name="middle-name" required>
-                
-                <label for="last-name">Last Name *</label>
-                <input type="text" id="last-name" name="last-name" required>
-                
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="address1">Address Line 1 *</label>
-                <input type="text" id="address1" name="address1" required>
-                
-                <label for="address2">Address Line 2 *</label>
-                <input type="text" id="address2" name="address2">
-                
-                <label for="city">City *</label>
-                <input type="text" id="city" name="city" required>
-                
-                <label for="state">State *</label>
-                <input type="text" id="state" name="state" required>
-                
-                <label for="zip">Zip Code *</label>
-                <input type="text" id="zip" name="zip" required>
-                
-                <label for="ssn">Social Security Number *</label>
-                <input type="text" id="ssn" name="ssn" required>
-                
-                <fieldset>
-                    <legend>US Citizen *</legend>
-                    <label><input type="radio" name="us-citizen" value="yes" required> Yes</label>
-                    <label><input type="radio" name="us-citizen" value="no"> No</label>
-                </fieldset>
-                
-                <button type="button" class="btn" onclick="navigateToPage('page2.html')">Next</button>
-            </form>
-        </main>
-        
-        <footer>
-            <p>&copy; 2024 Employment Registration</p>
-        </footer>
+    <!-- Header -->
+    <header class="main-header">
+        <h1>Employment Registration Form - Step 1</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="form-container">
+        <form action="page2.html" method="POST">
+            <h2>Personal Information</h2>
+            <label for="fullName">Full Name*</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number*</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="dob">Date of Birth*</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <div class="form-navigation">
+                <button type="button" onclick="history.back()" class="prev-btn">Previous</button>
+                <button type="submit" class="next-btn">Next</button>
+            </div>
+        </form>
     </div>
-    
-    <script src="scripts.js"></script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+    </footer>
 </body>
 </html>
