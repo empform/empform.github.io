@@ -3,77 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Page Form - Page 3</title>
+    <title>Employment Registration - Additional Information</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="main-header">
+        <h1>Employment Registration Form</h1>
+    </header>
+
+    <!-- Main Form Container -->
     <div class="form-container">
-        <div class="form-header">
-            <h1>Additional Information</h1>
-            <div class="progress-bar">
-                <div class="progress" style="width: 100%;"></div>
-            </div>
-        </div>
-        <form id="additionalInfoForm">
-            <div class="form-group">
-                <label>Occupation*</label>
-                <div class="radio-group">
-                    <input type="radio" id="unemployed" name="occupation" value="Unemployed" required>
-                    <label for="unemployed">Unemployed</label>
+        <form action="thankyou.html" method="post">
+            <h2>Additional Information</h2>
 
-                    <input type="radio" id="student" name="occupation" value="Student">
-                    <label for="student">Student</label>
-
-                    <input type="radio" id="govt" name="occupation" value="Government worker">
-                    <label for="govt">Government Worker</label>
-
-                    <input type="radio" id="retired" name="occupation" value="Retired">
-                    <label for="retired">Retired</label>
-
-                    <input type="radio" id="disabled" name="occupation" value="Disabled">
-                    <label for="disabled">Disabled</label>
-                </div>
+            <label>Occupation*</label>
+            <div class="radio-group">
+                <input type="radio" id="unemployed" name="occupation" value="Unemployed" required>
+                <label for="unemployed">Unemployed</label>
+                <input type="radio" id="employed" name="occupation" value="Employed" required>
+                <label for="employed">Employed</label>
+                <input type="radio" id="selfEmployed" name="occupation" value="Self-employed" required>
+                <label for="selfEmployed">Self-employed</label>
             </div>
 
-            <div class="form-group">
-                <label for="idUpload">Upload a Valid ID Front and Back*</label>
-                <input type="file" id="idUpload" name="idUpload" multiple required>
+            <label>Criminal Records*</label>
+            <div class="radio-group">
+                <input type="radio" id="criminalRecordYes" name="criminalRecord" value="Yes" required>
+                <label for="criminalRecordYes">Yes</label>
+                <input type="radio" id="criminalRecordNo" name="criminalRecord" value="No" required>
+                <label for="criminalRecordNo">No</label>
             </div>
 
-            <div class="form-group">
-                <label>Previous Occupation Experience*</label>
-                <div class="radio-group">
-                    <input type="radio" id="exp1" name="prevExperience" value="1-5 Years" required>
-                    <label for="exp1">1-5 Years</label>
-
-                    <input type="radio" id="exp2" name="prevExperience" value="6-10 Years">
-                    <label for="exp2">6-10 Years</label>
-
-                    <input type="radio" id="exp3" name="prevExperience" value="10 Years and Above">
-                    <label for="exp3">10 Years and Above</label>
-
-                    <input type="radio" id="expNone" name="prevExperience" value="None">
-                    <label for="expNone">None</label>
-                </div>
+            <label>Equipment You Own*</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="ownPrinter" name="equipment" value="Printer">
+                <label for="ownPrinter">Printer</label>
+                <input type="checkbox" id="ownScanner" name="equipment" value="Scanner">
+                <label for="ownScanner">Scanner</label>
+                <input type="checkbox" id="ownLaptop" name="equipment" value="Laptop">
+                <label for="ownLaptop">Laptop</label>
+                <input type="checkbox" id="ownDesktop" name="equipment" value="Desktop">
+                <label for="ownDesktop">Desktop</label>
+                <input type="checkbox" id="ownSoftware" name="equipment" value="Software">
+                <label for="ownSoftware">Software</label>
+                <input type="checkbox" id="ownHeadset" name="equipment" value="Headset">
+                <label for="ownHeadset">Headset</label>
+                <input type="checkbox" id="ownOthers" name="equipment" value="Others">
+                <label for="ownOthers">Others</label>
             </div>
 
-            <div class="form-group">
-                <label>Personal Records*</label>
-                <div class="radio-group">
-                    <input type="radio" id="recordGood" name="personalRecord" value="Good" required>
-                    <label for="recordGood">Good</label>
+            <label for="backgroundCheck">Do You Consent to a Background Check?*</label>
+            <textarea id="backgroundCheck" name="backgroundCheck" required></textarea>
 
-                    <input type="radio" id="recordBad" name="personalRecord" value="Bad">
-                    <label for="recordBad">Bad</label>
-                </div>
-            </div>
+            <label for="startingDate">What Is Your Preferred Start Date?*</label>
+            <input type="date" id="startingDate" name="startingDate" required>
 
             <div class="form-navigation">
-                <button type="button" id="backToPage2" class="prev-btn">Previous</button>
-                <button type="button" id="submitForm" class="submit-btn">Submit</button>
+                <button type="button" onclick="history.back()" class="prev-btn">Previous</button>
+                <button type="submit" id="submitForm" class="submit-btn">Submit</button>
             </div>
         </form>
     </div>
-    <script src="scripts.js"></script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+    </footer>
 </body>
 </html>
