@@ -8,51 +8,82 @@
 </head>
 <body>
     <div class="form-container">
-        <h1>Personal Information</h1>
+        <div class="form-header">
+            <h1>Personal Information</h1>
+            <div class="progress-bar">
+                <div class="progress" style="width: 33%;"></div>
+            </div>
+        </div>
         <form id="personalInfoForm">
-            <label for="firstName">First Name*</label>
-            <input type="text" id="firstName" name="firstName" required>
-
-            <label for="middleName">Middle Name*</label>
-            <input type="text" id="middleName" name="middleName" required>
-
-            <label for="lastName">Last Name*</label>
-            <input type="text" id="lastName" name="lastName" required>
-
-            <label for="email">Email Address*</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number*</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="address1">Address Line 1*</label>
-            <input type="text" id="address1" name="address1" required>
-
-            <label for="address2">Address Line 2</label>
-            <input type="text" id="address2" name="address2">
-
-            <label for="city">City*</label>
-            <input type="text" id="city" name="city" required>
-
-            <label for="state">State*</label>
-            <input type="text" id="state" name="state" required>
-
-            <label for="zip">Zip Code*</label>
-            <input type="text" id="zip" name="zip" required>
-
-            <label for="ssn">Social Security Number*</label>
-            <input type="text" id="ssn" name="ssn" required>
-
-            <label>US Citizen*</label>
-            <div class="radio-group">
-                <input type="radio" id="citizenYes" name="citizen" value="Yes" required>
-                <label for="citizenYes">Yes</label>
-
-                <input type="radio" id="citizenNo" name="citizen" value="No">
-                <label for="citizenNo">No</label>
+            <div class="form-group">
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required>
             </div>
 
-            <button type="button" id="nextToPage2">Next</button>
+            <div class="form-group">
+                <label for="middleName">Middle Name*</label>
+                <input type="text" id="middleName" name="middleName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address1">Address Line 1*</label>
+                <input type="text" id="address1" name="address1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address2">Address Line 2</label>
+                <input type="text" id="address2" name="address2">
+            </div>
+
+            <div class="form-group">
+                <label for="city">City*</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State*</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+
+            <div class="form-group">
+                <label for="zip">Zip Code*</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ssn">Social Security Number*</label>
+                <input type="text" id="ssn" name="ssn" required>
+            </div>
+
+            <div class="form-group">
+                <label>US Citizen*</label>
+                <div class="radio-group">
+                    <input type="radio" id="citizenYes" name="citizen" value="Yes" required>
+                    <label for="citizenYes">Yes</label>
+
+                    <input type="radio" id="citizenNo" name="citizen" value="No">
+                    <label for="citizenNo">No</label>
+                </div>
+            </div>
+
+            <div class="form-navigation">
+                <button type="button" id="nextToPage2" class="next-btn">Next</button>
+            </div>
         </form>
     </div>
     <script src="scripts.js"></script>
