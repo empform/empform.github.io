@@ -3,76 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Page Form - Page 2</title>
+    <title>Employment Registration - Interview Questions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="main-header">
+        <h1>Employment Registration Form</h1>
+    </header>
+
+    <!-- Main Form Container -->
     <div class="form-container">
-        <div class="form-header">
-            <h1>Interview Questions</h1>
-            <div class="progress-bar">
-                <div class="progress" style="width: 66%;"></div>
-            </div>
-        </div>
-        <form id="interviewForm">
-            <div class="form-group">
-                <label for="aboutYourself">Tell Us About Yourself*</label>
-                <textarea id="aboutYourself" name="aboutYourself" rows="3" required></textarea>
-            </div>
+        <form action="page3.html" method="post">
+            <h2>Interview Questions</h2>
+            <label for="aboutYourself">Tell Us About Yourself*</label>
+            <textarea id="aboutYourself" name="aboutYourself" required></textarea>
 
-            <div class="form-group">
-                <label for="whyJob">Reasons Why You Need This Job*</label>
-                <textarea id="whyJob" name="whyJob" rows="3" required></textarea>
-            </div>
+            <label for="whyThisJob">Reasons Why You Need This Job*</label>
+            <textarea id="whyThisJob" name="whyThisJob" required></textarea>
 
-            <div class="form-group">
-                <label for="reasonHire">One Reason Why You Should Be Hired*</label>
-                <textarea id="reasonHire" name="reasonHire" rows="3" required></textarea>
-            </div>
+            <label for="whyHireYou">One Reason Why You Should Be Hired*</label>
+            <textarea id="whyHireYou" name="whyHireYou" required></textarea>
 
-            <div class="form-group">
-                <label for="strengths">Greatest Professional Strengths*</label>
-                <textarea id="strengths" name="strengths" rows="3" required></textarea>
-            </div>
+            <label for="strengths">What Are Your Greatest Professional Strengths*</label>
+            <textarea id="strengths" name="strengths" required></textarea>
 
-            <div class="form-group">
-                <label for="weakness">Your Weakness*</label>
-                <textarea id="weakness" name="weakness" rows="3" required></textarea>
+            <label for="weakness">Your Weakness*</label>
+            <textarea id="weakness" name="weakness" required></textarea>
+
+            <label for="achievement">Your Greatest Achievement*</label>
+            <textarea id="achievement" name="achievement" required></textarea>
+
+            <label>Do You Have Experience Working from Home or Online Before?*</label>
+            <div class="radio-group">
+                <input type="radio" id="workFromHomeYes" name="workFromHome" value="Yes" required>
+                <label for="workFromHomeYes">Yes</label>
+                <input type="radio" id="workFromHomeNo" name="workFromHome" value="No" required>
+                <label for="workFromHomeNo">No</label>
             </div>
 
-            <div class="form-group">
-                <label for="achievement">Greatest Achievement*</label>
-                <textarea id="achievement" name="achievement" rows="3" required></textarea>
+            <label>Will You Be Able to Devote 4 Hours of Your Time a Day to the Company?*</label>
+            <div class="radio-group">
+                <input type="radio" id="devoteTimeYes" name="devoteTime" value="Yes" required>
+                <label for="devoteTimeYes">Yes</label>
+                <input type="radio" id="devoteTimeNo" name="devoteTime" value="No" required>
+                <label for="devoteTimeNo">No</label>
             </div>
 
-            <div class="form-group">
-                <label>Experience Working From Home*</label>
-                <div class="radio-group">
-                    <input type="radio" id="remoteYes" name="experienceRemote" value="Yes" required>
-                    <label for="remoteYes">Yes</label>
+            <label for="challenges">Could You Tell Us About a Challenge or Conflict You’ve Faced at Work and How You Dealt with It?*</label>
+            <textarea id="challenges" name="challenges" required></textarea>
 
-                    <input type="radio" id="remoteNo" name="experienceRemote" value="No">
-                    <label for="remoteNo">No</label>
-                </div>
-            </div>
+            <label for="fiveYears">Where Do You See Yourself in 5 Years?*</label>
+            <textarea id="fiveYears" name="fiveYears" required></textarea>
 
-            <div class="form-group">
-                <label>Will You Devote 4 Hours a Day?*</label>
-                <div class="radio-group">
-                    <input type="radio" id="commitYes" name="timeCommitment" value="Yes" required>
-                    <label for="commitYes">Yes</label>
-
-                    <input type="radio" id="commitNo" name="timeCommitment" value="No">
-                    <label for="commitNo">No</label>
-                </div>
-            </div>
-
-            <div class="form-navigation">
-                <button type="button" id="backToPage1" class="prev-btn">Previous</button>
-                <button type="button" id="nextToPage3" class="next-btn">Next</button>
-            </div>
-        </form>
-    </div>
-    <script src="scripts.js"></script>
-</body>
-</html>
+            <label for="characterWords">List Four Words That Describe Your Character*</label>
+            <t
