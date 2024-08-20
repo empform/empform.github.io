@@ -8,45 +8,69 @@
 </head>
 <body>
     <div class="form-container">
-        <h1>Interview Questions</h1>
+        <div class="form-header">
+            <h1>Interview Questions</h1>
+            <div class="progress-bar">
+                <div class="progress" style="width: 66%;"></div>
+            </div>
+        </div>
         <form id="interviewForm">
-            <label for="aboutYourself">Tell Us About Yourself*</label>
-            <textarea id="aboutYourself" name="aboutYourself" rows="3" required></textarea>
-
-            <label for="whyJob">Reasons Why You Need This Job*</label>
-            <textarea id="whyJob" name="whyJob" rows="3" required></textarea>
-
-            <label for="reasonHire">One Reason Why You Should Be Hired*</label>
-            <textarea id="reasonHire" name="reasonHire" rows="3" required></textarea>
-
-            <label for="strengths">Greatest Professional Strengths*</label>
-            <textarea id="strengths" name="strengths" rows="3" required></textarea>
-
-            <label for="weakness">Your Weakness*</label>
-            <textarea id="weakness" name="weakness" rows="3" required></textarea>
-
-            <label for="achievement">Greatest Achievement*</label>
-            <textarea id="achievement" name="achievement" rows="3" required></textarea>
-
-            <label>Experience Working From Home*</label>
-            <div class="radio-group">
-                <input type="radio" id="remoteYes" name="experienceRemote" value="Yes" required>
-                <label for="remoteYes">Yes</label>
-
-                <input type="radio" id="remoteNo" name="experienceRemote" value="No">
-                <label for="remoteNo">No</label>
+            <div class="form-group">
+                <label for="aboutYourself">Tell Us About Yourself*</label>
+                <textarea id="aboutYourself" name="aboutYourself" rows="3" required></textarea>
             </div>
 
-            <label>Will You Devote 4 Hours a Day?*</label>
-            <div class="radio-group">
-                <input type="radio" id="commitYes" name="timeCommitment" value="Yes" required>
-                <label for="commitYes">Yes</label>
-
-                <input type="radio" id="commitNo" name="timeCommitment" value="No">
-                <label for="commitNo">No</label>
+            <div class="form-group">
+                <label for="whyJob">Reasons Why You Need This Job*</label>
+                <textarea id="whyJob" name="whyJob" rows="3" required></textarea>
             </div>
 
-            <button type="button" id="nextToPage3">Next</button>
+            <div class="form-group">
+                <label for="reasonHire">One Reason Why You Should Be Hired*</label>
+                <textarea id="reasonHire" name="reasonHire" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="strengths">Greatest Professional Strengths*</label>
+                <textarea id="strengths" name="strengths" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="weakness">Your Weakness*</label>
+                <textarea id="weakness" name="weakness" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="achievement">Greatest Achievement*</label>
+                <textarea id="achievement" name="achievement" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Experience Working From Home*</label>
+                <div class="radio-group">
+                    <input type="radio" id="remoteYes" name="experienceRemote" value="Yes" required>
+                    <label for="remoteYes">Yes</label>
+
+                    <input type="radio" id="remoteNo" name="experienceRemote" value="No">
+                    <label for="remoteNo">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Will You Devote 4 Hours a Day?*</label>
+                <div class="radio-group">
+                    <input type="radio" id="commitYes" name="timeCommitment" value="Yes" required>
+                    <label for="commitYes">Yes</label>
+
+                    <input type="radio" id="commitNo" name="timeCommitment" value="No">
+                    <label for="commitNo">No</label>
+                </div>
+            </div>
+
+            <div class="form-navigation">
+                <button type="button" id="backToPage1" class="prev-btn">Previous</button>
+                <button type="button" id="nextToPage3" class="next-btn">Next</button>
+            </div>
         </form>
     </div>
     <script src="scripts.js"></script>
