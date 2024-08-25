@@ -1,0 +1,156 @@
+/* General Styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #4b4b4b;
+  background: url('image.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+header.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fffaf0;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  margin-bottom: 1em;
+}
+
+header.main-header h2 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #8b4513;
+}
+
+.container {
+  max-width: 600px;
+  padding: 2em;
+  margin: 100px auto 50px;
+  background-color: #fffaf0;
+  border-radius: 16px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #8b4513;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #8b4513;
+  padding-bottom: 0.5em;
+}
+
+.row {
+  margin-bottom: 2em;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #faf3e0;
+  border: 1px solid #d3b899;
+  border-radius: 8px;
+  transition: 0.35s ease-in-out;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: 0;
+  border-color: #a0522d;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.radio-group input[type='radio'] {
+  display: none;
+}
+
+.radio-group label {
+  width: 48%;
+  padding: 1em;
+  text-align: center;
+  background-color: #faf3e0;
+  border: 1px solid #d3b899;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.35s ease-in-out;
+  margin-bottom: 1em;
+}
+
+.radio-group input[type='radio']:checked + label {
+  background-color: #8b4513;
+  color: #fff;
+  border-color: #6f4e37;
+}
+
+button {
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.35s ease-in-out;
+}
+
+button:hover {
+  background-color: #6f4e37;
+}
+
+/* Updated button container style */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.button-group button {
+  width: 48%; /* Ensures both buttons are the same width */
+}
+
+@media only screen and (max-width: 540px) {
+  .radio-group label {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%; /* Full-width buttons on small screens */
+    margin-bottom: 0.5em; /* Add space between buttons */
+  }
+}
+
+p {
+  font-size: 1.2em;
+  color: #4e4e4e;
+  margin-bottom: 1.5em;
+}

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Page Form - Page 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Additional Information</h1>
+      <p>
+        We assure you that any of your information won't be released to any
+        Personnel or Agency for any reason. All information must be correct and
+        accurate because it will be verified.
+      </p>
+
+      <form id="occupationForm">
+        <div class="row">
+          <label for="occupation">Occupation*</label>
+          <div class="input-group radio-group">
+            <input
+              type="radio"
+              id="unemployed"
+              name="occupation"
+              value="Unemployed"
+              required
+            />
+            <label for="unemployed">Unemployed</label>
+
+            <input
+              type="radio"
+              id="student"
+              name="occupation"
+              value="Student"
+            />
+            <label for="student">Student</label>
+
+            <input
+              type="radio"
+              id="governmentWorker"
+              name="occupation"
+              value="Government workers"
+            />
+            <label for="governmentWorker">Government workers</label>
+
+            <input
+              type="radio"
+              id="retired"
+              name="occupation"
+              value="Retired"
+            />
+            <label for="retired">Retired</label>
+
+            <input
+              type="radio"
+              id="disabled"
+              name="occupation"
+              value="Disabled"
+            />
+            <label for="disabled">Disabled</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="uploadID">Upload a Valid ID (Front and Back)*</label>
+          <div class="input-group">
+            <input
+              type="file"
+              id="uploadFrontID"
+              name="uploadFrontID"
+              multiple
+              accept=".jpg,.jpeg,.png,.pdf"
+              required
+            />
+          <div class="input-group">
+            <input
+              type="file"
+              id="uploadBackID"
+              name="uploadBackID"
+              multiple
+              accept=".jpg,.jpeg,.png,.pdf"
+              required
+            />
+
+            <small>Upload up to 2 supported files. Max 1 GB per file.</small>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="previousExperience"
+            >Previous Occupation Experience*</label
+          >
+          <div class="input-group radio-group">
+            <input
+              type="radio"
+              id="experience1to5"
+              name="previousExperience"
+              value="1-5 Years"
+              required
+            />
+            <label for="experience1to5">1-5 Years</label>
+
+            <input
+              type="radio"
+              id="experience6to10"
+              name="previousExperience"
+              value="6-10 Years"
+            />
+            <label for="experience6to10">6-10 Years</label>
+
+            <input
+              type="radio"
+              id="experience10Plus"
+              name="previousExperience"
+              value="10 Years and Above"
+            />
+            <label for="experience10Plus">10 Years and Above</label>
+
+            <input
+              type="radio"
+              id="noExperience"
+              name="previousExperience"
+              value="NONE"
+            />
+            <label for="noExperience">NONE</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="personalRecords">Personal Records*</label>
+          <div class="input-group radio-group">
+            <input
+              type="radio"
+              id="recordGood"
+              name="personalRecords"
+              value="Good"
+              required
+            />
+            <label for="recordGood">Good</label>
+
+            <input
+              type="radio"
+              id="recordBad"
+              name="personalRecords"
+              value="Bad"
+            />
+            <label for="recordBad">Bad</label>
+          </div>
+        </div>
+
+        <div class="row button-group">
+          <button
+            type="button"
+            id="previousToPage1"
+            class="btn btn-prev"
+            onclick="window.location.href='page2.html';"
+          >
+            Previous
+          </button>
+
+          <button type="submit" id="submitPage" class="btn btn-submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
